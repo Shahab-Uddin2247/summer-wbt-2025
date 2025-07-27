@@ -1,0 +1,56 @@
+body {
+    background-color: #eee6e6;
+}
+
+form {
+    background-color: #dde9e7;
+    margin: 15px 15px;
+
+}
+
+form h2 {
+    color: red;
+    padding-left: 10px;
+}
+
+.input-row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.input-row label {
+    font-weight: bold;
+    text-align: right;
+    margin-right: 10px;
+    width: 400px;
+}
+
+.input-row input {
+    width: 400px;
+}
+
+#donation-amount input {
+    width: 10px;
+}
+
+#donation-amount label {
+    height: 100px;
+}
+
+.contact-options input {
+    width: 40px;
+}
+
+textarea {
+    width: 600px;
+    height: 80px;
+}
+
+.required-marker {
+    color: red;
+}
+
+#button1 {
+    margin-left: 200px;
+}
