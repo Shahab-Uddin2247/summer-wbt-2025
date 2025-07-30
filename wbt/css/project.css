@@ -1,0 +1,53 @@
+main {
+    padding: 20px;
+    background-color: #e3e3eb;
+    border-radius: 10px;
+    margin: 40px;
+}
+
+.project {
+    background-color: #c3c1dc;
+    align-items: center;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 10px;
+    width: 90%;
+    transition: all 1s;
+}
+
+.project:hover {
+
+    transform: scale(1.1);
+}
+
+
+.project h3 {
+    color: #2b2b2b;
+    margin-bottom: 5px;
+}
+
+.project p {
+    margin: 5px 0;
+    line-height: 1.5;
+}
+
+.project-images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 10px;
+    width: 100%;
+
+}
+
+.image img {
+    border-radius: 10px;
+    transition: all 1s;
+}
+
+.project-images img {
+
+    height: auto;
+    border-radius: 6px;
+}
