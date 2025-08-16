@@ -23,23 +23,31 @@
   </header>
 
   <h3>Please fill this form to contact me</h3>
-  <form method="get">
-    <strong>First Name:</strong> <input type="text" name="First Name" required /><br />
-    <strong>Last name:</strong> <input type="text" name="Last Name" required /><br />
-    <strong>Email:</strong><input type="email" name="Email" required /><br />
-    <strong> Subject for contact:</strong><br />
-    <input type="checkbox" />General Question<br />
-    <input type="checkbox" />Job Opportunity<br />
-    <input type="checkbox" />Project Inquiry<br />
-    <input type="checkbox" />Internship Opportunity<br />
+  <form method="get" id="contactForm" onsubmit="return ValidateForm()">
+    <strong>First Name:</strong>
+    <input type="text" name="First Name" id="firstName" required /><br />
+
+    <strong>Last name:</strong>
+    <input type="text" name="Last Name" id="lastName" required /><br />
+
+    <strong>Email:</strong>
+    <input type="email" name="Email" id="email" required /><br />
+
+    <strong>Subject for contact:</strong><br />
+    <input type="checkbox" id="generalQuestion" />General Question<br />
+    <input type="checkbox" id="jobOpportunity" />Job Opportunity<br />
+    <input type="checkbox" id="projectInquiry" />Project Inquiry<br />
+    <input type="checkbox" id="internshipOpportunity" />Internship Opportunity<br />
 
     <strong>Interested in:</strong><br />
-    <input type="radio" name="Interested in" />Skills<br />
-    <input type="radio" name="Interested in" />Experience<br />
-    <input type="radio" name="Interested in" />Education or Certifications<br />
+    <input type="radio" name="Interested in" id="skills" />Skills<br />
+    <input type="radio" name="Interested in" id="experience" />Experience<br />
+    <input type="radio" name="Interested in" id="education" />Education or Certifications<br />
 
-    <input type="submit" /> <input type="reset" />
+    <input type="submit" id="submitBtn" />
+    <input type="reset" id="resetBtn" />
   </form>
+
   <footer>
     <p>
       <a href="#"><img src="../image/fb.png" alt="Facebook" /></a>
@@ -50,6 +58,7 @@
 
     <p>Copy right reserved by the Owner.</p>
   </footer>
+  <script src="../data/script.js"></script>
 </body>
 
 </html>
