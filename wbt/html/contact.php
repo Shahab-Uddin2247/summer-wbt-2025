@@ -30,12 +30,12 @@
   </header>
 
   <?php
-  // Initialize error and input variables
+
   $firstNameErr = $lastNameErr = $emailErr = $subjectErr = $interestErr = "";
   $firstName = $lastName = $email = $subject = $interest = "";
 
   if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    // Validate first name
+    
     if (empty($_POST["firstName"])) {
       $firstNameErr = "First name is required";
     } else {
@@ -45,7 +45,7 @@
       }
     }
 
-    // Validate last name
+    
     if (empty($_POST["lastName"])) {
       $lastNameErr = "Last name is required";
     } else {
@@ -55,7 +55,7 @@
       }
     }
 
-    // Validate email
+  
     if (empty($_POST["email"])) {
       $emailErr = "Email is required";
     } else {
@@ -65,14 +65,14 @@
       }
     }
 
-    // Validate subject (checkboxes)
+   
     if (empty($_POST["subject"])) {
       $subjectErr = "Please select at least one option";
     } else {
-      $subject = $_POST["subject"]; // array of selected options
+      $subject = $_POST["subject"]; 
     }
 
-    // Validate interested in (radio)
+    
     if (empty($_POST["interest"])) {
       $interestErr = "Please choose one option";
     } else {
@@ -127,7 +127,7 @@
   </form>
 
   <?php
-  // Display user input if no errors
+ 
   if ($_SERVER["REQUEST_METHOD"] == "POST" && empty($firstNameErr) && empty($lastNameErr) && empty($emailErr) && empty($subjectErr) && empty($interestErr)) {
     echo "<h2>Your Input:</h2>";
     echo htmlspecialchars($firstName) . "<br>";
